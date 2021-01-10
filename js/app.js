@@ -34,8 +34,7 @@ var seattle = {
     return this.cookiesPerHour, this.total;
   },
 }
-seattle.calculateCustomersPerHour();
-seattle.calculateCookiesPerHour();
+
 
 var tokyo = {
   city: 'tokyo',
@@ -168,7 +167,7 @@ for (var j = 0; j < city.length; j++) {
   var cityPerHour = document.createElement('ul');
   parent.appendChild(cityPerHour);
 
-  for (var k = 0; k < workingHours.length; k++) {
+  for (var k = 0; k < workingHours.length+1; k++) {
     var list = document.createElement('li');
     list.textContent = workingHours[k] + ': ' + city[j].cookiesPerHour[k] + ' cookies';
     cityPerHour.appendChild(list);
