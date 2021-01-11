@@ -159,13 +159,13 @@ for (var j = 0; j < city.length; j++) {
 
   city[j].calculateCustomersPerHour();
   city[j].calculateCookiesPerHour();
-  var parent = document.getElementById('main');
+  var mainID = document.getElementById('main');
   var cityName = document.createElement('h2');
   cityName.textContent = city[j].city;
-  parent.appendChild(cityName);
+  mainID.appendChild(cityName);
 
   var cityPerHour = document.createElement('ul');
-  parent.appendChild(cityPerHour);
+  mainID.appendChild(cityPerHour);
 
   for (var k = 0; k < workingHours.length+1; k++) {
     var list = document.createElement('li');
