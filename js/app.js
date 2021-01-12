@@ -32,7 +32,7 @@ CookiesShops.prototype.calculateCookiesPerHour = function () {
 };
 
 // Create and append table
-var mainDiv = document.getElementById('salesTable') , rIndex , cIndex ;
+var mainDiv = document.getElementById('salesTable');
 var shopTable = document.createElement('table');
 mainDiv.appendChild(shopTable);
 
@@ -122,7 +122,21 @@ lima.render();
 //   }
 //   list.textContent = ('total: ' + city[j].total);
 // }
+ 
 
+function hourlySum ( ) {
+  var totalPerHour = [] ; 
+  var sumPerHour = 0 ;
+  var hour=[] ; 
+      for (var i=0 ; i < workingHours.length ; i++ ) {
+         
+         sumPerHour = sumPerHour+ hour[i] ; 
+
+          totalPerHour.push(sumPerHour) ;
+
+      }
+}
+hourlySum() ; 
 //  function for footer 
 function lastRow() {
 
@@ -132,6 +146,11 @@ function lastRow() {
   var footerRow = document.createElement('th');
   footerRow.textContent = 'Totals';
   lastRow.appendChild(footerRow);
+  
+  for (var i=0 ; i<workingHours.length ; i++ )
+  var totalsPerHour = document.createElement ('td')
+  totalsPerHour.textContent = totalPerHour[i] ; 
+  lastRow.appendChild (totalsPerHour) ; 
           
 }
 lastRow();
