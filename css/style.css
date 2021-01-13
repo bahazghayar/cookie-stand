@@ -1,6 +1,7 @@
 
 body{ 
     background-color: #f3e1e1;
+    height: 1500px;
 }
 
 header , footer{
@@ -8,7 +9,7 @@ header , footer{
 }
 
 main{
-height: 1500px;
+height: 100%;
 
 }
 
