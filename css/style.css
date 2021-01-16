@@ -144,7 +144,7 @@ h2 {
 
 }
 
-td , th {
+td , th ,tr {
     padding-left: 30px;
   border: 2px solid black ; 
   /* text-align: center; */
@@ -152,9 +152,53 @@ td , th {
 }
 
 table {
- margin-right: auto;
- margin-left: auto;
+margin-right: auto;
+margin-left: auto;
 border-collapse: collapse;
 color: #7d5a5a;
 font-size: x-large;
+width: 1400px;
+
 }
+
+
+form {
+    border: 2px solid  black;
+    width: 500px;
+    height: 300px;
+    color: #7d5a5a;
+    margin-left: 61px;
+    margin-top: 40px;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+#submit {
+    float: right;
+    margin: 10px 10px 10px 10px ;
+    border-radius: 10px;
+}
+
+#formTitle {
+   text-decoration: underline;
+   text-align: center;
+   font-size: xx-large;
+}
+
+#storeCity , #minCustPerHour , #maxCustPerHour , #avgCookiesPerSale {
+    padding-left: 10px ;
+        
+}
+
+#formElement {
+    margin-left: 20px;
+}
+
+ #grandTotal { 
+    display: block;
+   transform: translateX(1240px);
+   width: 125px;
+   border:solid 4px  black; 
+   border-radius: 10px;
+} 
+
