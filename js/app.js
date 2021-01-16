@@ -65,16 +65,16 @@ var lima = new CookiesShops('lima', 2, 16, 4.6);
 
 
 // page rendering: 
-var parentSec  = document.getElementById('mainId');
+var mainPage  = document.getElementById('mainId');
 var locationSection = document.createElement('section')  ; 
-parentSec.appendChild(locationSection) ; 
+mainPage.appendChild(locationSection) ; 
 
 var locationTable = document.createElement('table');
 locationSection.appendChild(locationTable) ; 
 
 // form rendering:
 var newSection = document.createElement('section');
-parentSec.appendChild(newSection) ; 
+mainPage.appendChild(newSection) ; 
  
 var form = document.getElementById('formSection') ; 
 newSection.appendChild(form) ; 
