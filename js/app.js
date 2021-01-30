@@ -162,7 +162,7 @@ form = addEventListener('submit', submitter);
 function submitter(event) {
   event.preventDefault();
   
-  var shopName = event.target.storeCity.value;
+  var shopName = event.target.shopName.value;
   var minCustPerHour =  parseInt  (event.target.minCustPerHour.value);
   var maxCustPerHour =  parseInt (event.target.maxCustPerHour.value);
   var avgCookiesPerSale = (event.target.avgCookiesPerSale.value);
@@ -170,12 +170,16 @@ function submitter(event) {
   new CookiesShops(shopName, minCustPerHour, maxCustPerHour, avgCookiesPerSale);
 
   locationTable.innerHTML= '' ; 
+  grandTotalSum=0;
 
  header();
  cellData() ; 
- 
+  
   for (var i=0; i< locations.length ; i++) {
-
+       
+      
+       locations[i].totalCookies=0;
+      
        locations[i].cookiesPerHour=[] ; 
        locations[i].calculateCustomersPerHour ()  ;  
        locations[i].calculateCookiesPerHour () ; 
