@@ -141,8 +141,8 @@ function footer() {
 
   var grandTotal = document.createElement('th') ;
   grandTotal.textContent = grandTotalSum;
-  grandTotal.setAttribute ("id","grandTotal") ; 
-  footerRow.appendChild(grandTotal);
+  // grandTotal.setAttribute ("id","grandTotal") ; 
+  tableRow.appendChild(grandTotal);
   
 }
 
@@ -162,9 +162,9 @@ form = addEventListener('submit', submitter);
 function submitter(event) {
   event.preventDefault();
   
-  var shopName = event.target.storeCity.value;
+  var shopName = event.target.shopName.value;
   var minCustPerHour =  parseInt  (event.target.minCustPerHour.value);
-  var maxCustPerHour =parseInt (event.target.maxCustPerHour.value);
+  var maxCustPerHour =  parseInt (event.target.maxCustPerHour.value);
   var avgCookiesPerSale = (event.target.avgCookiesPerSale.value);
 
   new CookiesShops(shopName, minCustPerHour, maxCustPerHour, avgCookiesPerSale);
