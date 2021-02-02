@@ -138,7 +138,7 @@ function footer() {
     footerRowCells.textContent = sumPerHour[i];
     tableRow.appendChild(footerRowCells);
   }
-
+ 
   var grandTotal = document.createElement('th') ;
   grandTotal.textContent = grandTotalSum;
   // grandTotal.setAttribute ("id","grandTotal") ; 
@@ -177,7 +177,7 @@ function submitter(event) {
   
   for (var i=0; i< locations.length ; i++) {
        
-      
+       
        locations[i].totalCookies=0;
       
        locations[i].cookiesPerHour=[] ; 
